@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testinfo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_gravity="center"
+            android:src="@mipmap/pinky"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="Pink Kitty"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="100px"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="20px"
+            android:textStyle="bold"
+            android:id="@+id/name"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:orientation="horizontal"
+                android:weightSum="90">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:id="@+id/priceeu"
+                    android:text="50€"
+                    android:gravity="center"
+                    android:textSize="50px"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:id="@+id/pricebtc"
+                    android:text="0.0026BTC"
+                    android:gravity="center"
+                    android:textSize="50px"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:id="@+id/priceeth"
+                    android:text="0.050"
+                    android:gravity="center"
+                    android:textSize="50px"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/desc"
+                android:textSize="60px"
+                android:padding="20px"
+                android:text="A Pink Kitty!"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
